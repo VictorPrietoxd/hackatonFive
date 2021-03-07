@@ -1,0 +1,264 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 200vh;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerFP{
+    height: 87vh;
+    width: 90vw;
+    display: grid;
+    grid-template-rows: repeat(18,5vh);
+    grid-template-columns: repeat(22,1fr);
+    background-color:#264446;
+    color: white;
+    align-self: flex-start;
+}
+
+.barNav{
+    height: 50%;
+    width: 100%;
+    grid-row:1/span 6;
+    grid-column: 5/span 13;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.logo{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.navPages{
+    height: 100%;
+    width:50%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.textMain{
+    height: 100%;
+    width: 100%;
+    grid-row: 6/span 3;
+    grid-column: 5/span 6;
+    font-size: 3em;
+}
+
+.pTextMain{
+    height: 100%;
+    width: 100%;
+    grid-row:10/span 2;
+    grid-column: 5/span 6;
+    font-size: 1.3em;
+}
+
+.btnMain{
+    height: 100%;
+    width: 100%;
+    grid-row: 13/span 1;
+    grid-column:5/span 2;
+    border: none;
+    background-color: rgb(36, 131, 95);
+    color: white;
+}
+
+.countMain{
+    height: 150%;
+    width: 100%;
+    grid-row: 16/span 4;
+    grid-column: 5/ span 12;
+    background-color: rgb(36, 131, 95);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.countMain .project{
+    height: 70%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.countMain .project h1{
+    font-size: 3em;
+}
+
+.countMain .segundo{
+    height: 70%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.countMain .segundo h1{
+    font-size: 3em;
+}
+
+.countMain .tercero{
+    height: 70%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.countMain .tercero h1{
+    font-size: 3em;
+}
+
+.imgMain{
+    height: 100%;
+    width: calc(159% + 3px);
+    grid-row: 5/span 10;
+    grid-column: 14/span 7;
+    background-image: url(./colleagues-giving-fist-bump.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.espacioVacio{
+    height: 17px;
+    width: 100%;
+    grid-row: 18/20;
+    grid-column: 17/ span 7;
+    background-color: rgb(36, 131, 95);
+}
+
+.espacioVaciox2{
+    height: calc(85vh + 17px);
+    width: 10vw;
+    position: absolute;
+    right:0;
+    background-color: rgb(36, 131, 95);
+    z-index: -2;
+}
+
+.containerSP{
+    height: 90vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerSP .logos{
+    height: 13%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerSP .logos div {
+    height: 100%;
+    width: 15%;
+}
+
+.containerSP .logos div img{
+    height: 100%;
+    width: 100%;
+}
+.containerSP h1{
+    color: rgb(36, 131, 95);
+}
+.textServices{
+    height: 15%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #1f684b;
+}
+.textServices h2 , .textServices p{
+    text-align: center;
+}
+
+.textServices h2{
+    font-size: 2em;
+}
+
+.cardsSP{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    position: relative;
+}
+
+.card{
+    height: 99%;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(248, 248, 248);
+}
+
+.cLogo{
+    height: 45%;
+    width: 70%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+
+.cLogo div{
+    height: 25%;
+    width: 12%;
+    border-radius: 100px;
+    border: 2px solid black;
+  
+}
+
+.textControl{
+    height: 35%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hr{
+    height: 50%;
+    width: 0.1px;
+    border-left: 5px solid rgb(36, 131, 95);
+    position: absolute;
+    left: 0;
+}
+
+.card.green{
+    background-color:rgba(36, 131, 95,.8);
+    color: white;
+}
+
+.card.green h1{
+    color: white;
+}
